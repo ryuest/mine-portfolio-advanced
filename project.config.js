@@ -11,7 +11,7 @@ module.exports = {
   /** The file name of the application's entry point */
   main: 'main',
   /** The name of the directory in which to emit compiled assets */
-  outDir: 'dist',
+  outDir: 'static',
   /** The base path for all projects assets (relative to the website root) */
   publicPath: NODE_ENV === 'development' ? `http://${ip.address()}:3000/` : '/',
   /** Whether to generate sourcemaps */
@@ -21,7 +21,7 @@ module.exports = {
   /** A hash map of variables and their values to expose globally */
   globals: {},
   /** Whether to enable verbose logging */
-  verbose: false,
+  verbose: true,
   /** The list of modules to bundle separately from the core application code */
   vendors: [
     'react',
