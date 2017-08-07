@@ -1,0 +1,42 @@
+{
+  "projects": {
+    "master": "catch-of-the-day-zer-ryu",
+    "prod": "catch-of-the-day-zer-ryu"
+  },
+  "ci": {
+    "createConfig": {
+      "master": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "AIzaSyA42yhNMtnFXwANauDghl89cbtpXwER-8I",
+          "authDomain": "catch-of-the-day-zer-ryu.firebaseapp.com",
+          "databaseURL": "https://catch-of-the-day-zer-ryu.firebaseio.com",
+          "projectId": "catch-of-the-day-zer-ryu",
+          "storageBucket": "catch-of-the-day-zer-ryu.appspot.com"
+        },
+        "reduxFirebase": {
+          "userProfile": "users",
+          "enableLogging": false,
+          "updateProfileOnLogin": false
+        }
+      },
+      "prod": {
+        "version": "${npm_package_version}",
+        "env": "production",
+        "firebase": {
+          "apiKey": "AIzaSyA42yhNMtnFXwANauDghl89cbtpXwER-8I",
+          "authDomain": "catch-of-the-day-zer-ryu.firebaseapp.com",
+          "databaseURL": "https://catch-of-the-day-zer-ryu.firebaseio.com",
+          "projectId": "catch-of-the-day-zer-ryu",
+          "storageBucket": "catch-of-the-day-zer-ryu.appspot.com"
+        },
+        "reduxFirebase": {
+          "userProfile": "users",
+          "enableLogging": false,
+          "updateProfileOnLogin": false
+        }
+      }
+    }
+  }
+}
